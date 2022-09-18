@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/loginStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Register</title>
+</head>
+<body>
+    <section class="side">
+        <img src="/images/img.svg" alt="">
+    </section>
+
+    <section class="main">
+        <div class="login-container">
+            <p class="title">Create Post</p>
+            <div class="separator"></div>
+            <p class="welcome-message">Please, provide details to proceed</p>
+
+            <form class="login-form" action="/createpost" method="post" enctype="multipart/form-data">
+                <div class="form-control">
+                    <input type="text" placeholder="Enter Title" name="name">
+                    {{!-- <i class="fas fa-user"></i> --}}
+                </div>
+                <div class="form-control">
+                    <input type="file" name="file" accept="image/*">
+                    {{!-- <i class="fa-solid fa-envelope"></i> --}}
+                </div>
+                <div class="form-control">
+                    <textarea name="description" id="desc" cols="50" rows="10" placeholder="Enter post detail"></textarea>
+                </div>
+
+                <button class="submit">Create</button>
+            </form>
+        </div>
+    </section>
+    
+</body>
+</html>

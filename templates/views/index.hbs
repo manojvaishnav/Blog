@@ -1,12 +1,161 @@
 <!DOCTYPE html>
+<!-- divinectorweb.com -->
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>How to Create a Website With Video Background</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
-    <h1>Live share</h1>
+    <!-- Header -->
+    <header>
+        <video src="./video//1.mp4" class="vid-bg" autoplay loop muted></video>
+
+        <div class="nav-area">
+            <div class="logo">Phoenix Blog</div>
+
+            <ul class="menu-area">
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="#contactus">Contact Us</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/register">Register</a></li>
+            </ul>
+        </div>
+
+        <div class="welcome-text">
+            <h2>Phoenix Blog</h2>
+            <p>Make your own blog website without coding.</p>
+            <a class="btn" href="/register">Create Your First Blog
+                <!-- <button class="btn">Create Your Own Blog</button> -->
+            </a>
+        </div>
+    </header>
+
+
+    <!-- Main Diagram -->
+    <div class="timeline">
+        <div class="outer">
+            <div class="card">
+                <div class="info">
+                    <h3 class="title">Step 1</h3>
+                    <p>
+                        Register yourself click on <a href="">to create a blog</a> & fill
+                        the details.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="info">
+                    <h3 class="title">Step 2</h3>
+                    <p>
+                        <a href="">Login</a> via credentials. Congrats for joining Phoenix
+                        community
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="info">
+                    <h3 class="title">Step 3</h3>
+                    <p>Now create a post & upload on your blog.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="info">
+                    <h3 class="title">Step 4</h3>
+                    <p>After creating your first post you can share the link</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="info">
+                    <h3 class="title">Step 5</h3>
+                    <p>Check number of likes & engagement on your post</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact US -->
+    <section id="contactus">
+        <div class="section-header">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Hey blogger!! Feel free to contact with our team</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+
+                        <div class="contact-info-content">
+                            <h4>Address</h4>
+                            <p>
+                                Engineering College,<br />
+                                Ajmer <br />305025
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+
+                        <div class="contact-info-content">
+                            <h4>Phone</h4>
+                            <p>561-456-2321</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+
+                        <div class="contact-info-content">
+                            <h4>Email</h4>
+                            <p>teamphonenix@email.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form action="/" id="contact-form" method="post">
+                        <h2>Send Message</h2>
+                        <div class="input-box">
+                            <input type="text" required="true" name="name" />
+                            <span>Full Name</span>
+                        </div>
+
+                        <div class="input-box">
+                            <input type="email" required="true" name="email" />
+                            <span>Email</span>
+                        </div>
+
+                        <div class="input-box">
+                            <textarea required="true" name="message"></textarea>
+                            <span>Type your Message...</span>
+                        </div>
+
+                        <div class="input-box">
+                            <input type="submit" value="Send" name="submit" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    {{>footer}}
 </body>
+
 </html>

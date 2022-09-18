@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User View</title>
+    <link rel="stylesheet" href="css/viewBlog.css">
+  </head>
+  
+  <body>
+    
+    <div class="header">
+      <nav class="navbar">
+        <span>Hey {{this.userName}}</span>
+      </nav>
+    </div>
+    <div class="main">
+      <div class="left">
+        <div class="heading">
+          <h1>Create Blog</h1>
+        </div>
+        <form action="/addblog" method="post">
+          <div class="input">
+            <label for="title" hidden>Email</label>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              value="{{this.email}}"
+              placeholder="User Email" aria-disabled="true" hidden
+              required
+            />
+          </div>
+          <div class="input">
+            <label for="title">Enter Blog Title</label>
+            <input
+              type="text"
+              name="title"
+              id="title"
+              placeholder="Blog Name"
+              required
+            />
+          </div>
+          <div class="input">
+            <button type="submit">Create</button>
+          </div>
+        </form>
+      </div>
+      <div class="right">
+        <div class="rheading">
+          <span>All Blog By You</span>
+        </div>
+      {{#each title}}
+        <div class="blog">
+          <div class="data">
+            <a href="{{this.url}}/{{this.title}}">{{this.title}}</a>
+            <hr>
+        </div>
+     {{/each}}
+      </div>
+    </div>
+  </body>
+</html>

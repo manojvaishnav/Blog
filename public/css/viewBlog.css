@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: rgb(197, 122, 24);
+         */
+    background-image: url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm222-mind-16_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=1c53e59a7b21c1ffee85bc36a3837392');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header {
+    padding: 10px;
+    background-color: #0092e5;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav {
+    margin: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(0, 0, 0);
+    height: fit-content;
+    margin-left: 10px;
+}
+
+.heading {
+    width: 100%;
+    background-color: black;
+    text-align: center;
+}
+
+.heading h1 {
+    color: rgb(255, 255, 255);
+    margin: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.input label {
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.input input {
+    outline: none;
+    border: 1px solid white;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.input button {
+    background-color: #0092e5;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid red; */
+    width: 100%;
+    height: fit-content;
+}
+
+.rheading {
+    width: 90%;
+    text-align: center;
+    padding: 10px;
+}
+
+.rheading span {
+    color: rgb(6, 6, 6);
+    font-size: 20px;
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.data {
+    padding: 10px;
+    width: 100%;
+}
+
+.data a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+hr {
+    background-color: black;
+}
+
+@media (max-width: 767px){
+    .main{
+        flex-direction: column;
+    }
+}
